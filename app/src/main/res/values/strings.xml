@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Master Synthetizer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Paramètres</string>
+
+    <!-- Navigation drawer -->
+    <string name="app_email">roiheenok@gmail.com</string>
+    <string name="nav_heenok_menu">Synthétiseur bordélique</string>
+    <string name="nav_skill_menu">Synthétiseur de skill</string>
+    <string name="share">Partager</string>
+    <string name="send">Envoyer</string>
+
+    <!-- Main -->
+    <string name="main_title">TEST</string>
+
+    <!-- Synthétiseur du Roi Heenok -->
+    <string name="heenok_title">Yoh les PD\'s !</string>
+    <string name="heenok_chevilles">Chevilles</string>
+    <string name="heenok_brla">Brla</string>
+    <string name="heenok_medaillon">Médaillon</string>
+    <string name="heenok_montres">Montres</string>
+    <string name="heenok_negros">Négros</string>
+    <string name="heenok_houhou">Houhou</string>
+    <string name="heenok_revenu">Aucun revenu</string>
+    <string name="heenok_han">Han !</string>
+    <string name="heenok_croivent">Ils croivent</string>
+    <string name="heenok_pesent">Pesent rien</string>
+    <string name="heenok_dimension">Autre dimension</string>
+    <string name="heenok_100dollars">100 dollars</string>
+    <string name="heenok_montrealparis">Montreal Paris</string>
+    <string name="heenok_hydroponique">Hydroponique</string>
+    <string name="heenok_pomme">Pomme</string>
+    <string name="heenok_revent">Revent a cela</string>
+    <string name="heenok_convention">Convention</string>
+    <string name="heenok_equipe">Mon equipe</string>
+    <string name="heenok_famille">pas d\'la famille</string>
+
+</resources>
