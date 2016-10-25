@@ -1,1 +1,1 @@
-"# Master Synthetizer" 
+# Master Synthetizer
