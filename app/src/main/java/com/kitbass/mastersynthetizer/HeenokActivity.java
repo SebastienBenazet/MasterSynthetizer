@@ -23,23 +23,22 @@ public class HeenokActivity extends AppCompatActivity {
     public void onSoundButtonClick(View v) {
         switch (v.getId()) {
             case (R.id.heenok_chevilles_button):
-                final MediaPlayer cheville = MediaPlayer.create(this, R.raw.pomme);
-                cheville.start();
+                //Sound needed
                 break;
             case (R.id.heenok_brla_button):
-                final MediaPlayer brla = MediaPlayer.create(this, R.raw.pomme);
-                brla.start();
+                //Sound needed
                 break;
             case (R.id.heenok_medaillon_button):
-                System.out.println("Mon médaillon touche à mon pénis !!!");
+                //Sound needed
                 break;
             case (R.id.heenok_negros_button):
-                System.out.println("Mon médaillon touche à mon pénis !!!");
+                //Sound needed
                 break;
             case (R.id.heenok_montres_button):
-                System.out.println("Mon médaillon touche à mon pénis !!!");
+                //Sound needed
                 break;
             case (R.id.heenok_houhou_button):
+                //Sound needed
                 break;
             case (R.id.heenok_revenu_button):
                 final MediaPlayer revenu = MediaPlayer.create(this, R.raw.font_aucun_revenu);
