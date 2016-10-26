@@ -37,5 +37,7 @@
     <string name="heenok_convention">Convention</string>
     <string name="heenok_equipe">Mon equipe</string>
     <string name="heenok_famille">pas d\'la famille</string>
+    <string name="text_home">On va s\'allumer</string>
+    <string name="accessibility_home_image">Image du Roi Heenok fumant</string>
 
 </resources>

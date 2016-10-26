@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        //Permet de garder la couleur d'origine des icones du Navigation Drawer
+        navigationView.setItemIconTintList(null);
     }
 
     @Override
