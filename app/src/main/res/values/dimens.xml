@@ -8,6 +8,7 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <dimen name="title_font_size">20dp</dimen>
+    <dimen name="home_font_size">50sp</dimen>
 
     <dimen name="heenok_button_witdh">105dp</dimen>
 

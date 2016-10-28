@@ -1,189 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorHeenok"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kitbass.mastersynthetizer.HeenokActivity">
+    android:layout_height="match_parent">
 
-    <!-- 1ère rangée -->
-    <Button
-        android:id="@+id/heenok_brla_button"
-        android:layout_width="@dimen/heenok_button_witdh"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_brla" />
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.kitbass.mastersynthetizer.HeenokActivity">
 
-    <Button
-        android:id="@+id/heenok_chevilles_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/heenok_brla_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_chevilles" />
+        <!-- 1ère rangée -->
+        <Button
+            android:id="@+id/heenok_brla_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_brla" />
 
-    <Button
-        android:id="@+id/heenok_medaillon_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/heenok_brla_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_medaillon" />
+        <Button
+            android:id="@+id/heenok_chevilles_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/heenok_brla_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_chevilles" />
 
-    <!-- 2ème rangée -->
-    <Button
-        android:id="@+id/heenok_montres_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_brla_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_montres" />
+        <Button
+            android:id="@+id/heenok_medaillon_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/heenok_brla_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_medaillon" />
 
-    <Button
-        android:id="@+id/heenok_negros_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_brla_button"
-        android:layout_toLeftOf="@id/heenok_montres_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_negros" />
+        <!-- 2ème rangée -->
+        <Button
+            android:id="@+id/heenok_montres_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_brla_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_montres" />
 
-    <Button
-        android:id="@+id/heenok_houhou_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_brla_button"
-        android:layout_toRightOf="@id/heenok_brla_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_houhou" />
+        <Button
+            android:id="@+id/heenok_negros_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_brla_button"
+            android:layout_toLeftOf="@id/heenok_montres_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_negros" />
 
-    <!-- 3ème rangée -->
-    <Button
-        android:id="@+id/heenok_revenu_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montres_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_revenu" />
+        <Button
+            android:id="@+id/heenok_houhou_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_brla_button"
+            android:layout_toRightOf="@id/heenok_brla_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_houhou" />
 
-    <Button
-        android:id="@+id/heenok_han_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montres_button"
-        android:layout_toLeftOf="@id/heenok_revenu_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_han" />
+        <!-- 3ème rangée -->
+        <Button
+            android:id="@+id/heenok_revenu_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_montres_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_revenu" />
 
-    <Button
-        android:id="@+id/heenok_croivent_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montres_button"
-        android:layout_toRightOf="@id/heenok_revenu_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_croivent" />
+        <Button
+            android:id="@+id/heenok_han_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_montres_button"
+            android:layout_toLeftOf="@id/heenok_revenu_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_han" />
 
-    <!-- 4ème rangée -->
-    <Button
-        android:id="@+id/heenok_pesent_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revenu_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_pesent" />
+        <Button
+            android:id="@+id/heenok_croivent_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_montres_button"
+            android:layout_toRightOf="@id/heenok_revenu_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_croivent" />
 
-    <Button
-        android:id="@+id/heenok_dimension_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revenu_button"
-        android:layout_toLeftOf="@id/heenok_pesent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_dimension" />
+        <!-- 4ème rangée -->
+        <Button
+            android:id="@+id/heenok_pesent_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_revenu_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_pesent" />
 
-    <Button
-        android:id="@+id/heenok_100dollars_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revenu_button"
-        android:layout_toRightOf="@id/heenok_pesent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_100dollars" />
+        <Button
+            android:id="@+id/heenok_dimension_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_revenu_button"
+            android:layout_toLeftOf="@id/heenok_pesent_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_dimension" />
 
-    <!-- 5ème rangée -->
-    <Button
-        android:id="@+id/heenok_montrealparis_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_pesent_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_montrealparis" />
+        <Button
+            android:id="@+id/heenok_100dollars_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_revenu_button"
+            android:layout_toRightOf="@id/heenok_pesent_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_100dollars" />
 
-    <Button
-        android:id="@+id/heenok_hydroponique_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_pesent_button"
-        android:layout_toLeftOf="@id/heenok_montrealparis_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_hydroponique" />
+        <!-- 5ème rangée -->
+        <Button
+            android:id="@+id/heenok_montrealparis_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_pesent_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_montrealparis" />
 
-    <Button
-        android:id="@+id/heenok_pomme_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_pesent_button"
-        android:layout_toRightOf="@id/heenok_montrealparis_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_pomme" />
+        <Button
+            android:id="@+id/heenok_hydroponique_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_pesent_button"
+            android:layout_toLeftOf="@id/heenok_montrealparis_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_hydroponique" />
 
-    <!-- 6ème rangée -->
-    <Button
-        android:id="@+id/heenok_revent_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montrealparis_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_revent" />
+        <Button
+            android:id="@+id/heenok_pomme_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_pesent_button"
+            android:layout_toRightOf="@id/heenok_montrealparis_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_pomme" />
 
-    <Button
-        android:id="@+id/heenok_convention_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montrealparis_button"
-        android:layout_toLeftOf="@id/heenok_revent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_convention" />
+        <!-- 6ème rangée -->
+        <Button
+            android:id="@+id/heenok_revent_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_montrealparis_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_revent" />
 
-    <Button
-        android:id="@+id/heenok_equipe_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montrealparis_button"
-        android:layout_toRightOf="@id/heenok_revent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_equipe" />
+        <Button
+            android:id="@+id/heenok_convention_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_montrealparis_button"
+            android:layout_toLeftOf="@id/heenok_revent_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_convention" />
 
-    <!-- 7ème rangée -->
-    <Button
-        android:id="@+id/heenok_famille_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revent_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_famille" />
+        <Button
+            android:id="@+id/heenok_equipe_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_montrealparis_button"
+            android:layout_toRightOf="@id/heenok_revent_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_equipe" />
+
+        <!-- 7ème rangée -->
+        <Button
+            android:id="@+id/heenok_famille_button"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_revent_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_famille" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -81,7 +81,7 @@ public class HeenokActivity extends AppCompatActivity {
                 revent.start();
                 break;
             case (R.id.heenok_convention_button):
-                final MediaPlayer convention= MediaPlayer.create(this, R.raw.seulement_ma_convention);
+                final MediaPlayer convention = MediaPlayer.create(this, R.raw.seulement_ma_convention);
                 convention.start();
                 break;
             case (R.id.heenok_equipe_button):

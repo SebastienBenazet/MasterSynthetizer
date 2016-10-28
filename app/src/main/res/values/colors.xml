@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#22313F</color>
     <color name="colorAccent">#D64541</color>
     <color name="colorHeenok">#BDC3C7</color>
+    <color name="text_shadow">#7F000000</color>
 </resources>
