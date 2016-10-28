@@ -4,8 +4,11 @@
 <br>
 
 <img src="https://github.com/SebastienBenazet/MasterSynthetizer/blob/master/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
- alt="Snowplow logo" title="Heenok" align="left" />
-Han ! Pour tous les p'tits fanatiques.
+ alt="Snowplow logo" title="Heenok" align="left" /> Han ! Pour tous les p'tits fanatiques.
+<br>
+<br>
+<br>
+<br>
 
 # Instructions
 - Download the APK
