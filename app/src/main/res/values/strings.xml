@@ -39,5 +39,6 @@
     <string name="heenok_famille">pas d\'la famille</string>
     <string name="text_home">On va s\'allumer</string>
     <string name="accessibility_home_image">Image du Roi Heenok fumant</string>
+    <string name="accessibility_ic_launcher">Tête du Roi Heenok</string>
 
 </resources>
