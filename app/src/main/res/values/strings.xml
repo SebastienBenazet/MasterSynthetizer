@@ -33,11 +33,13 @@
     <string name="heenok_montrealparis">Montreal Paris</string>
     <string name="heenok_hydroponique">Hydroponique</string>
     <string name="heenok_pomme">Pomme</string>
-    <string name="heenok_revent">Revent a cela</string>
+    <string name="heenok_revent">Rêvent a cela</string>
     <string name="heenok_convention">Convention</string>
     <string name="heenok_equipe">Mon equipe</string>
     <string name="heenok_famille">pas d\'la famille</string>
     <string name="text_home">On va s\'allumer</string>
+
+    <!-- Textes d'accessibilité -->
     <string name="accessibility_home_image">Image du Roi Heenok fumant</string>
     <string name="accessibility_ic_launcher">Tête du Roi Heenok</string>
 
