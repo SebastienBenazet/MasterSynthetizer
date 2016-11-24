@@ -11,6 +11,10 @@ public class HeenokActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heenok);
+
+        //Orientation de l'écran
+        //Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        //System.out.println(display.getRotation());
     }
 
 
