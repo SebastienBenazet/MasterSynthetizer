@@ -1,15 +1,9 @@
 package com.kitbass.mastersynthetizer;
 
-import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
-
-import java.io.File;
 
 public class HeenokActivity extends AppCompatActivity {
 
@@ -17,6 +11,10 @@ public class HeenokActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heenok);
+
+        //Orientation de l'écran
+        //Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        //System.out.println(display.getRotation());
     }
 
 

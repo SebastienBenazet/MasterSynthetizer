@@ -16,6 +16,7 @@
         <!-- 1ère rangée -->
         <Button
             android:id="@+id/heenok_brla_button"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -24,6 +25,7 @@
 
         <Button
             android:id="@+id/heenok_chevilles_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/heenok_brla_button"
@@ -32,6 +34,7 @@
 
         <Button
             android:id="@+id/heenok_medaillon_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/heenok_brla_button"
@@ -41,6 +44,7 @@
         <!-- 2ème rangée -->
         <Button
             android:id="@+id/heenok_montres_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_brla_button"
@@ -50,6 +54,7 @@
 
         <Button
             android:id="@+id/heenok_negros_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_brla_button"
@@ -59,6 +64,7 @@
 
         <Button
             android:id="@+id/heenok_houhou_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_brla_button"
@@ -69,6 +75,7 @@
         <!-- 3ème rangée -->
         <Button
             android:id="@+id/heenok_revenu_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_montres_button"
@@ -78,6 +85,7 @@
 
         <Button
             android:id="@+id/heenok_han_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_montres_button"
@@ -87,6 +95,7 @@
 
         <Button
             android:id="@+id/heenok_croivent_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_montres_button"
@@ -97,6 +106,7 @@
         <!-- 4ème rangée -->
         <Button
             android:id="@+id/heenok_pesent_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_revenu_button"
@@ -106,6 +116,7 @@
 
         <Button
             android:id="@+id/heenok_dimension_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_revenu_button"
@@ -115,6 +126,7 @@
 
         <Button
             android:id="@+id/heenok_100dollars_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_revenu_button"
@@ -125,6 +137,7 @@
         <!-- 5ème rangée -->
         <Button
             android:id="@+id/heenok_montrealparis_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_pesent_button"
@@ -134,6 +147,7 @@
 
         <Button
             android:id="@+id/heenok_hydroponique_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_pesent_button"
@@ -143,6 +157,7 @@
 
         <Button
             android:id="@+id/heenok_pomme_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_pesent_button"
@@ -153,6 +168,7 @@
         <!-- 6ème rangée -->
         <Button
             android:id="@+id/heenok_revent_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_montrealparis_button"
@@ -162,6 +178,7 @@
 
         <Button
             android:id="@+id/heenok_convention_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_montrealparis_button"
@@ -171,6 +188,7 @@
 
         <Button
             android:id="@+id/heenok_equipe_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_montrealparis_button"
@@ -181,6 +199,7 @@
         <!-- 7ème rangée -->
         <Button
             android:id="@+id/heenok_famille_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/heenok_button_witdh"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heenok_revent_button"
