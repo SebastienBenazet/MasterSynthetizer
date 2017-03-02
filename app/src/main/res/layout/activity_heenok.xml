@@ -207,6 +207,160 @@
             android:onClick="onSoundButtonClick"
             android:text="@string/heenok_famille" />
 
+        <Button
+            android:id="@+id/heenok_calotte_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_revent_button"
+            android:layout_toLeftOf="@id/heenok_famille_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_calotte" />
+
+        <Button
+            android:id="@+id/heenok_tentends1_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_revent_button"
+            android:layout_toRightOf="@id/heenok_famille_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_tentends1" />
+
+        <!-- 8ème rangée -->
+        <Button
+            android:id="@+id/heenok_ptipd_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_famille_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_ptipd" />
+
+        <Button
+            android:id="@+id/heenok_calotte2_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_famille_button"
+            android:layout_toLeftOf="@id/heenok_ptipd_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_calotte2" />
+
+        <Button
+            android:id="@+id/heenok_streetlife_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_famille_button"
+            android:layout_toRightOf="@id/heenok_ptipd_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_streetlife" />
+
+        <!-- 9ème rangée -->
+        <Button
+            android:id="@+id/heenok_donnedelamour_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_ptipd_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_donnedelamour" />
+
+        <Button
+            android:id="@+id/heenok_cestpete_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_ptipd_button"
+            android:layout_toLeftOf="@id/heenok_donnedelamour_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_cestpete" />
+
+        <Button
+            android:id="@+id/heenok_autredimension_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_ptipd_button"
+            android:layout_toRightOf="@id/heenok_donnedelamour_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_autredimension" />
+
+        <!-- 10ème rangée -->
+        <Button
+            android:id="@+id/heenok_frousse_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_donnedelamour_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_frousse" />
+
+        <Button
+            android:id="@+id/heenok_sorbonne_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_donnedelamour_button"
+            android:layout_toLeftOf="@id/heenok_frousse_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_sorbonne" />
+
+        <Button
+            android:id="@+id/heenok_balafre_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_donnedelamour_button"
+            android:layout_toRightOf="@id/heenok_frousse_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_balafre" />
+
+        <!-- 11ème rangée -->
+        <Button
+            android:id="@+id/heenok_dictionnaire_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_frousse_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_dictionnaire" />
+
+        <Button
+            android:id="@+id/heenok_chosessepassent_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_frousse_button"
+            android:layout_toLeftOf="@id/heenok_dictionnaire_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_chosessepassent" />
+
+        <Button
+            android:id="@+id/heenok_tyson_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_frousse_button"
+            android:layout_toRightOf="@id/heenok_dictionnaire_button"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_tyson" />
+
+        <!-- 12ème rangée -->
+        <Button
+            android:id="@+id/heenok_rapclassic_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/heenok_button_witdh"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heenok_dictionnaire_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSoundButtonClick"
+            android:text="@string/heenok_rapclassic" />
 
     </RelativeLayout>
 </ScrollView>

@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 public class HeenokActivity extends AppCompatActivity {
 
@@ -21,22 +22,24 @@ public class HeenokActivity extends AppCompatActivity {
     public void onSoundButtonClick(View v) {
         switch (v.getId()) {
             case (R.id.heenok_chevilles_button):
-                //Sound needed
+                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.heenok_brla_button):
-                //Sound needed
+                final MediaPlayer brla = MediaPlayer.create(this, R.raw.brla);
+                brla.start();
                 break;
             case (R.id.heenok_medaillon_button):
-                //Sound needed
+                final MediaPlayer medaillon = MediaPlayer.create(this, R.raw.medaillon);
+                medaillon.start();
                 break;
             case (R.id.heenok_negros_button):
-                //Sound needed
+                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.heenok_montres_button):
-                //Sound needed
+                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.heenok_houhou_button):
-                //Sound needed
+                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.heenok_revenu_button):
                 final MediaPlayer revenu = MediaPlayer.create(this, R.raw.font_aucun_revenu);
@@ -89,6 +92,66 @@ public class HeenokActivity extends AppCompatActivity {
             case (R.id.heenok_famille_button):
                 final MediaPlayer famille = MediaPlayer.create(this, R.raw.tes_pas_de_la_famille);
                 famille.start();
+                break;
+            case (R.id.heenok_calotte_button):
+                final MediaPlayer calotte = MediaPlayer.create(this, R.raw.calotte);
+                calotte.start();
+                break;
+            case (R.id.heenok_tentends1_button):
+                final MediaPlayer tentends1 = MediaPlayer.create(this, R.raw.t_entends1);
+                tentends1.start();
+                break;
+            case (R.id.heenok_ptipd_button):
+                final MediaPlayer ptipd = MediaPlayer.create(this, R.raw.pti_pd);
+                ptipd.start();
+                break;
+            case (R.id.heenok_calotte2_button):
+                final MediaPlayer calotte2 = MediaPlayer.create(this, R.raw.calotte2);
+                calotte2.start();
+                break;
+            case (R.id.heenok_streetlife_button):
+                final MediaPlayer streetlife = MediaPlayer.create(this, R.raw.street_life);
+                streetlife.start();
+                break;
+            case (R.id.heenok_donnedelamour_button):
+                final MediaPlayer donnelamour = MediaPlayer.create(this, R.raw.jte_donne_de_lamour);
+                donnelamour.start();
+                break;
+            case (R.id.heenok_cestpete_button):
+                final MediaPlayer cestpete = MediaPlayer.create(this, R.raw.jtrouve_que_cest_pete);
+                cestpete.start();
+                break;
+            case (R.id.heenok_autredimension_button):
+                final MediaPlayer autredimension = MediaPlayer.create(this, R.raw.jviens_dun_autre_dimension);
+                autredimension.start();
+                break;
+            case (R.id.heenok_frousse_button):
+                final MediaPlayer frousse = MediaPlayer.create(this, R.raw.la_frousse);
+                frousse.start();
+                break;
+            case (R.id.heenok_sorbonne_button):
+                final MediaPlayer sorbonne = MediaPlayer.create(this, R.raw.la_sorbonne);
+                sorbonne.start();
+                break;
+            case (R.id.heenok_balafre_button):
+                final MediaPlayer balafre = MediaPlayer.create(this, R.raw.le_balafre);
+                balafre.start();
+                break;
+            case (R.id.heenok_dictionnaire_button):
+                final MediaPlayer dictionnaire = MediaPlayer.create(this, R.raw.le_dictionnaire);
+                dictionnaire.start();
+                break;
+            case (R.id.heenok_chosessepassent_button):
+                final MediaPlayer chosessepassent = MediaPlayer.create(this, R.raw.les_choses_se_passent_a_fond);
+                chosessepassent.start();
+                break;
+            case (R.id.heenok_tyson_button):
+                final MediaPlayer tyson = MediaPlayer.create(this, R.raw.michael_tyson);
+                tyson.start();
+                break;
+            case (R.id.heenok_rapclassic_button):
+                final MediaPlayer rapclassic = MediaPlayer.create(this, R.raw.rap_classique);
+                rapclassic.start();
                 break;
         }
     }
