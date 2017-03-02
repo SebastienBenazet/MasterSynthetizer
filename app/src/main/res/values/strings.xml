@@ -42,5 +42,20 @@
     <!-- Textes d'accessibilité -->
     <string name="accessibility_home_image">Image du Roi Heenok fumant</string>
     <string name="accessibility_ic_launcher">Tête du Roi Heenok</string>
+    <string name="heenok_calotte">Calotte</string>
+    <string name="heenok_tentends1">T\'entends</string>
+    <string name="heenok_ptipd">Pti PD</string>
+    <string name="heenok_calotte2">On calotte</string>
+    <string name="heenok_streetlife">Street Life</string>
+    <string name="heenok_donnedelamour">Donne de l\'amour</string>
+    <string name="heenok_cestpete">C\'est pété</string>
+    <string name="heenok_autredimension">Autre dimension</string>
+    <string name="heenok_frousse">La frousse</string>
+    <string name="heenok_sorbonne">Sorbonne</string>
+    <string name="heenok_balafre">Balafré</string>
+    <string name="heenok_dictionnaire">Dictionnaire</string>
+    <string name="heenok_chosessepassent">Choses se passent</string>
+    <string name="heenok_tyson">Michael Tyson</string>
+    <string name="heenok_rapclassic">Rap classic</string>
 
 </resources>
