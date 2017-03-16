@@ -4,7 +4,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Toast;
 
 public class HeenokActivity extends AppCompatActivity {
 
@@ -21,9 +20,9 @@ public class HeenokActivity extends AppCompatActivity {
 
     public void onSoundButtonClick(View v) {
         switch (v.getId()) {
-            case (R.id.heenok_chevilles_button):
-                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-                break;
+//            case (R.id.heenok_chevilles_button):
+//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
+//                break;
             case (R.id.heenok_brla_button):
                 final MediaPlayer brla = MediaPlayer.create(this, R.raw.brla);
                 brla.start();
@@ -32,15 +31,15 @@ public class HeenokActivity extends AppCompatActivity {
                 final MediaPlayer medaillon = MediaPlayer.create(this, R.raw.medaillon);
                 medaillon.start();
                 break;
-            case (R.id.heenok_negros_button):
-                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-                break;
-            case (R.id.heenok_montres_button):
-                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-                break;
-            case (R.id.heenok_houhou_button):
-                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-                break;
+//            case (R.id.heenok_negros_button):
+//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
+//                break;
+//            case (R.id.heenok_montres_button):
+//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
+//                break;
+//            case (R.id.heenok_houhou_button):
+//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
+//                break;
             case (R.id.heenok_revenu_button):
                 final MediaPlayer revenu = MediaPlayer.create(this, R.raw.font_aucun_revenu);
                 revenu.start();
@@ -56,10 +55,6 @@ public class HeenokActivity extends AppCompatActivity {
             case (R.id.heenok_pesent_button):
                 final MediaPlayer pesent = MediaPlayer.create(this, R.raw.ils_pesent_rien);
                 pesent.start();
-                break;
-            case (R.id.heenok_dimension_button):
-                final MediaPlayer dimension = MediaPlayer.create(this, R.raw.jviens_dun_autre_dimension);
-                dimension.start();
                 break;
             case (R.id.heenok_100dollars_button):
                 final MediaPlayer dollars = MediaPlayer.create(this, R.raw.moins_que_100_dollars);
