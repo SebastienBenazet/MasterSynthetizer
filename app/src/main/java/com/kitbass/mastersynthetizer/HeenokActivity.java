@@ -27,6 +27,7 @@ public class HeenokActivity extends AppCompatActivity {
                 final MediaPlayer brla = MediaPlayer.create(this, R.raw.brla);
                 brla.start();
                 break;
+
             case (R.id.heenok_medaillon_button):
                 final MediaPlayer medaillon = MediaPlayer.create(this, R.raw.medaillon);
                 medaillon.start();
