@@ -395,7 +395,7 @@
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:onClick="onSoundButtonClick"
                 android:scaleType="fitXY"
-                android:src="@drawable/font_aucun_revenu" />
+                android:src="@drawable/calotte" />
         </LinearLayout>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

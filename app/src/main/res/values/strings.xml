@@ -15,6 +15,7 @@
 
     <!-- Main -->
     <string name="main_title">TEST</string>
+    <string name="coming_soon">Coming soon</string>
 
     <!-- Synthétiseur du Roi Heenok -->
     <string name="heenok_title">Yoh les PD\'s !</string>
@@ -38,10 +39,6 @@
     <string name="heenok_equipe">Mon equipe</string>
     <string name="heenok_famille">pas d\'la famille</string>
     <string name="text_home">On va s\'allumer</string>
-
-    <!-- Textes d'accessibilité -->
-    <string name="accessibility_home_image">Image du Roi Heenok fumant</string>
-    <string name="accessibility_ic_launcher">Tête du Roi Heenok</string>
     <string name="heenok_calotte">Calotte</string>
     <string name="heenok_tentends1">T\'entends</string>
     <string name="heenok_ptipd">Pti PD</string>
@@ -57,5 +54,10 @@
     <string name="heenok_chosessepassent">Choses se passent</string>
     <string name="heenok_tyson">Michael Tyson</string>
     <string name="heenok_rapclassic">Rap classic</string>
+
+    <!-- Textes d'accessibilité -->
+    <string name="accessibility_home_image">Image du Roi Heenok fumant</string>
+    <string name="accessibility_ic_launcher">Tête du Roi Heenok</string>
+
 
 </resources>
