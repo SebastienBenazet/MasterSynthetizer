@@ -15,3 +15,13 @@
 - Autoriser les installations via des Sources inconnues dans les paramètres de sécurité
 - Installer l'APK
 - Enjoy !
+
+<img src="https://github.com/SebastienBenazet/MasterSynthetizer/blob/master/HeenokDemo.png"
+ alt="MasterSynthetizer Demo" title="HeenokDemo" align="left" width="300" /> 
+ <br>
+ <br>
+ <br>
+ <br> 
+ - Interface simple et épurée
+ - Toute vos punchlines préférées du Roi Heenok dans une seule appli 
+ - Possibilité de jouer plusieurs sons en même temps
