@@ -1,153 +1,198 @@
 package com.kitbass.mastersynthetizer;
 
-import android.media.MediaPlayer;
+import android.media.AudioAttributes;
+import android.media.AudioManager;
+import android.media.SoundPool;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class HeenokActivity extends AppCompatActivity {
+    private SoundPool soundPool;
+    private boolean loaded;
+    // Maximumn sound stream.
+    private static final int MAX_STREAMS = 7;
+
+    private int soundIdBrla;
+    private int soundIdCalotte;
+    private int soundIdCalotte2;
+    private int soundIdAucunRevenu;
+    private int soundIdHan1;
+    private int soundIdIlsCroivent;
+    private int soundIdPesentRien;
+    private int soundIdDonneAmour;
+    private int soundIdCestPete;
+    private int soundIdAutreDimension;
+    private int soundIdFrousse;
+    private int soundIdSorbonne;
+    private int soundIdBalafre;
+    private int soundIdDictionnaire;
+    private int soundIdPassentAFont;
+    private int soundIdMedaillon;
+    private int soundIdTyson;
+    private int soundId100Dollars;
+    private int soundIdMontreal;
+    private int soundIdHydroponique;
+    private int soundIdPomme;
+    private int soundIdPtiPD;
+    private int soundIdRapClassique;
+    private int soundIdReventACela;
+    private int soundIdConvention;
+    private int soundIdEquipe;
+    private int soundIdStreeLife;
+    private int soundIdTentends;
+    private int soundIdFamille;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heenok);
 
-        //Orientation de l'écran
-        //Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-        //System.out.println(display.getRotation());
+
+        if (Build.VERSION.SDK_INT >= 21) {
+            AudioAttributes audioAttrib = new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_GAME)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .build();
+
+            SoundPool.Builder builder = new SoundPool.Builder();
+            builder.setAudioAttributes(audioAttrib).setMaxStreams(MAX_STREAMS);
+            this.soundPool = builder.build();
+        } else {
+            this.soundPool = new SoundPool(MAX_STREAMS, AudioManager.STREAM_MUSIC, 0);
+        }
+
+        // When Sound Pool load complete.
+        this.soundPool.setOnLoadCompleteListener(new SoundPool.OnLoadCompleteListener() {
+            @Override
+            public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
+                loaded = true;
+            }
+        });
+
+        this.soundIdBrla = this.soundPool.load(this, R.raw.brla, 1);
+        this.soundIdCalotte = this.soundPool.load(this, R.raw.calotte, 1);
+        this.soundIdCalotte2 = this.soundPool.load(this, R.raw.calotte2, 1);
+        this.soundIdAucunRevenu = this.soundPool.load(this, R.raw.font_aucun_revenu, 1);
+        this.soundIdHan1 = this.soundPool.load(this, R.raw.han1, 1);
+        this.soundIdIlsCroivent = this.soundPool.load(this, R.raw.ils_croivent_cest_un_jeu, 1);
+        this.soundIdPesentRien = this.soundPool.load(this, R.raw.ils_pesent_rien, 1);
+        this.soundIdDonneAmour = this.soundPool.load(this, R.raw.jte_donne_de_lamour, 1);
+        this.soundIdCestPete = this.soundPool.load(this, R.raw.jtrouve_que_cest_pete, 1);
+        this.soundIdAutreDimension = this.soundPool.load(this, R.raw.jviens_dun_autre_dimension, 1);
+        this.soundIdFrousse = this.soundPool.load(this, R.raw.la_frousse, 1);
+        this.soundIdSorbonne = this.soundPool.load(this, R.raw.la_sorbonne, 1);
+        this.soundIdBalafre = this.soundPool.load(this, R.raw.le_balafre, 1);
+        this.soundIdDictionnaire = this.soundPool.load(this, R.raw.le_dictionnaire, 1);
+        this.soundIdPassentAFont = this.soundPool.load(this, R.raw.les_choses_se_passent_a_fond, 1);
+        this.soundIdMedaillon = this.soundPool.load(this, R.raw.medaillon, 1);
+        this.soundIdTyson = this.soundPool.load(this, R.raw.michael_tyson, 1);
+        this.soundId100Dollars = this.soundPool.load(this, R.raw.moins_que_100_dollars, 1);
+        this.soundIdMontreal = this.soundPool.load(this, R.raw.montreal_paris, 1);
+        this.soundIdHydroponique = this.soundPool.load(this, R.raw.ou_est_lhydroponique, 1);
+        this.soundIdPomme = this.soundPool.load(this, R.raw.pomme, 1);
+        this.soundIdPtiPD = this.soundPool.load(this, R.raw.pti_pd, 1);
+        this.soundIdRapClassique = this.soundPool.load(this, R.raw.rap_classique, 1);
+        this.soundIdReventACela = this.soundPool.load(this, R.raw.revent_a_cela, 1);
+        this.soundIdConvention = this.soundPool.load(this, R.raw.seulement_ma_convention, 1);
+        this.soundIdEquipe = this.soundPool.load(this, R.raw.seulement_mon_equipe, 1);
+        this.soundIdStreeLife = this.soundPool.load(this, R.raw.street_life, 1);
+        this.soundIdTentends = this.soundPool.load(this, R.raw.t_entends1, 1);
+        this.soundIdFamille = this.soundPool.load(this, R.raw.tes_pas_de_la_famille, 1);
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void onSoundButtonClick(View v) {
         switch (v.getId()) {
-//            case (R.id.heenok_chevilles_button):
-//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-//                break;
             case (R.id.heenok_brla_button):
-                final MediaPlayer brla = MediaPlayer.create(this, R.raw.brla);
-                brla.start();
+                if (loaded) this.soundPool.play(this.soundIdBrla, 1, 1, 1, 0, 1);
                 break;
-
             case (R.id.heenok_medaillon_button):
-                final MediaPlayer medaillon = MediaPlayer.create(this, R.raw.medaillon);
-                medaillon.start();
+                if (loaded) this.soundPool.play(this.soundIdMedaillon, 1, 1, 1, 0, 1);
                 break;
-//            case (R.id.heenok_negros_button):
-//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-//                break;
-//            case (R.id.heenok_montres_button):
-//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-//                break;
-//            case (R.id.heenok_houhou_button):
-//                Toast.makeText(getApplicationContext(), "Not yet !", Toast.LENGTH_SHORT).show();
-//                break;
             case (R.id.heenok_revenu_button):
-                final MediaPlayer revenu = MediaPlayer.create(this, R.raw.font_aucun_revenu);
-                revenu.start();
+                if (loaded) this.soundPool.play(this.soundIdAucunRevenu, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_han_button):
-                final MediaPlayer han1 = MediaPlayer.create(this, R.raw.han1);
-                han1.start();
+                if (loaded) this.soundPool.play(this.soundIdHan1, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_croivent_button):
-                final MediaPlayer croivent = MediaPlayer.create(this, R.raw.ils_croivent_cest_un_jeu);
-                croivent.start();
+                if (loaded) this.soundPool.play(this.soundIdIlsCroivent, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_pesent_button):
-                final MediaPlayer pesent = MediaPlayer.create(this, R.raw.ils_pesent_rien);
-                pesent.start();
+                if (loaded) this.soundPool.play(this.soundIdPesentRien, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_100dollars_button):
-                final MediaPlayer dollars = MediaPlayer.create(this, R.raw.moins_que_100_dollars);
-                dollars.start();
+                if (loaded) this.soundPool.play(this.soundId100Dollars, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_montrealparis_button):
-                final MediaPlayer montreal = MediaPlayer.create(this, R.raw.montreal_paris);
-                montreal.start();
+                if (loaded) this.soundPool.play(this.soundIdMontreal, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_hydroponique_button):
-                final MediaPlayer hydroponique = MediaPlayer.create(this, R.raw.ou_est_lhydroponique);
-                hydroponique.start();
+                if (loaded) this.soundPool.play(this.soundIdHydroponique, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_pomme_button):
-                final MediaPlayer pomme = MediaPlayer.create(this, R.raw.pomme);
-                pomme.start();
+                if (loaded) this.soundPool.play(this.soundIdPomme, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_revent_button):
-                final MediaPlayer revent = MediaPlayer.create(this, R.raw.revent_a_cela);
-                revent.start();
+                if (loaded) this.soundPool.play(this.soundIdReventACela, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_convention_button):
-                final MediaPlayer convention = MediaPlayer.create(this, R.raw.seulement_ma_convention);
-                convention.start();
+                if (loaded) this.soundPool.play(this.soundIdConvention, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_equipe_button):
-                final MediaPlayer equipe = MediaPlayer.create(this, R.raw.seulement_mon_equipe);
-                equipe.start();
+                if (loaded) this.soundPool.play(this.soundIdEquipe, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_famille_button):
-                final MediaPlayer famille = MediaPlayer.create(this, R.raw.tes_pas_de_la_famille);
-                famille.start();
+                if (loaded) this.soundPool.play(this.soundIdFamille, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_calotte_button):
-                final MediaPlayer calotte = MediaPlayer.create(this, R.raw.calotte);
-                calotte.start();
+                if (loaded) this.soundPool.play(this.soundIdCalotte, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_tentends1_button):
-                final MediaPlayer tentends1 = MediaPlayer.create(this, R.raw.t_entends1);
-                tentends1.start();
+                if (loaded) this.soundPool.play(this.soundIdTentends, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_ptipd_button):
-                final MediaPlayer ptipd = MediaPlayer.create(this, R.raw.pti_pd);
-                ptipd.start();
+                if (loaded) this.soundPool.play(this.soundIdPtiPD, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_calotte2_button):
-                final MediaPlayer calotte2 = MediaPlayer.create(this, R.raw.calotte2);
-                calotte2.start();
+                if (loaded) this.soundPool.play(this.soundIdCalotte2, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_streetlife_button):
-                final MediaPlayer streetlife = MediaPlayer.create(this, R.raw.street_life);
-                streetlife.start();
+                if (loaded) this.soundPool.play(this.soundIdStreeLife, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_donnedelamour_button):
-                final MediaPlayer donnelamour = MediaPlayer.create(this, R.raw.jte_donne_de_lamour);
-                donnelamour.start();
+                if (loaded) this.soundPool.play(this.soundIdDonneAmour, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_cestpete_button):
-                final MediaPlayer cestpete = MediaPlayer.create(this, R.raw.jtrouve_que_cest_pete);
-                cestpete.start();
+                if (loaded) this.soundPool.play(this.soundIdCestPete, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_autredimension_button):
-                final MediaPlayer autredimension = MediaPlayer.create(this, R.raw.jviens_dun_autre_dimension);
-                autredimension.start();
+                if (loaded) this.soundPool.play(this.soundIdAutreDimension, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_frousse_button):
-                final MediaPlayer frousse = MediaPlayer.create(this, R.raw.la_frousse);
-                frousse.start();
+                if (loaded) this.soundPool.play(this.soundIdFrousse, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_sorbonne_button):
-                final MediaPlayer sorbonne = MediaPlayer.create(this, R.raw.la_sorbonne);
-                sorbonne.start();
+                if (loaded) this.soundPool.play(this.soundIdSorbonne, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_balafre_button):
-                final MediaPlayer balafre = MediaPlayer.create(this, R.raw.le_balafre);
-                balafre.start();
+                if (loaded) this.soundPool.play(this.soundIdBalafre, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_dictionnaire_button):
-                final MediaPlayer dictionnaire = MediaPlayer.create(this, R.raw.le_dictionnaire);
-                dictionnaire.start();
+                if (loaded) this.soundPool.play(this.soundIdDictionnaire, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_chosessepassent_button):
-                final MediaPlayer chosessepassent = MediaPlayer.create(this, R.raw.les_choses_se_passent_a_fond);
-                chosessepassent.start();
+                if (loaded) this.soundPool.play(this.soundIdPassentAFont, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_tyson_button):
-                final MediaPlayer tyson = MediaPlayer.create(this, R.raw.michael_tyson);
-                tyson.start();
+                if (loaded) this.soundPool.play(this.soundIdTyson, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_rapclassic_button):
-                final MediaPlayer rapclassic = MediaPlayer.create(this, R.raw.rap_classique);
-                rapclassic.start();
+                if (loaded) this.soundPool.play(this.soundIdRapClassique, 1, 1, 1, 0, 1);
                 break;
         }
     }
