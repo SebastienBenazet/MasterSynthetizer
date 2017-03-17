@@ -845,7 +845,7 @@
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:onClick="onSoundButtonClick"
                 android:scaleType="fitXY"
-                android:src="@drawable/tes_pas_de_la_famille" />
+                android:src="@drawable/tes_pas_dla_famille" />
 
             <ImageButton
                 android:id="@+id/heenok_soon_button"
