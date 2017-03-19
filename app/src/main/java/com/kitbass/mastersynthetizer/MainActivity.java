@@ -107,9 +107,11 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_manage) {
             Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_share) {
-            Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_about) {
+            //Start AboutActivity
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_donate) {
             Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
         }
 

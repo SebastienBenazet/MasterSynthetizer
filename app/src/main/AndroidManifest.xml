@@ -27,6 +27,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kitbass.mastersynthetizer.MainActivity" />
         </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName="com.kitbass.mastersynthetizer.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kitbass.mastersynthetizer.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
