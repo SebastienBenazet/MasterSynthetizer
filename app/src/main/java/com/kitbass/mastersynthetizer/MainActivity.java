@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+
         if (id == R.id.nav_heenok) {
             //Play Heenok song
             final MediaPlayer dollars = MediaPlayer.create(this, R.raw.moins_que_100_dollars);
