@@ -11,10 +11,11 @@
 
     <!-- Navigation drawer -->
     <string name="app_email">roiheenok@gmail.com</string>
+    <string name="nav_plus_group">Plus</string>
     <string name="nav_heenok_menu">Synthétiseur bordélique</string>
     <string name="nav_skill_menu">Synthétiseur de skill</string>
-    <string name="share">Partager</string>
-    <string name="send">Envoyer</string>
+    <string name="about">A propos</string>
+    <string name="donate">Dons PayPal</string>
 
     <!-- Main -->
     <string name="main_title">TEST</string>
@@ -57,6 +58,12 @@
     <string name="heenok_chosessepassent">Choses se passent</string>
     <string name="heenok_tyson">Michael Tyson</string>
     <string name="heenok_rapclassic">Rap classic</string>
+
+    <!-- About -->
+    <string name="developper">Développeur</string>
+    <string name="template">Template Heenok</string>
+    <string name="sebastien_benazet">Sébastien Bénazet</string>
+    <string name="antoine_decriem">Antoine Decriem</string>
 
     <!-- Textes d'accessibilité -->
     <string name="accessibility_home_image">Image du Roi Heenok fumant</string>

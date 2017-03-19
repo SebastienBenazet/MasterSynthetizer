@@ -2,6 +2,7 @@ package com.kitbass.mastersynthetizer;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -94,6 +95,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+
         if (id == R.id.nav_heenok) {
             //Play Heenok song
             final MediaPlayer dollars = MediaPlayer.create(this, R.raw.moins_que_100_dollars);
@@ -107,10 +109,15 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_manage) {
             Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_share) {
-            Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_send) {
-            Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_about) {
+            //Start AboutActivity
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_donate) {
+            String donateUrl = "https://www.paypal.me/SebastienBenazet";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(donateUrl));
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
