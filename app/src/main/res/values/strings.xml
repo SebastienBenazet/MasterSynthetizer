@@ -3,13 +3,11 @@
     <string name="banner_ad_unit_id">ca-app-pub-8265447561352564/2863428730</string>
 
     <string name="app_name">Master Synthetizer</string>
-
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Paramètres</string>
 
     <!-- Navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="app_email">roiheenok@gmail.com</string>
     <string name="nav_plus_group">Plus</string>
     <string name="nav_heenok_menu">Synthétiseur bordélique</string>
