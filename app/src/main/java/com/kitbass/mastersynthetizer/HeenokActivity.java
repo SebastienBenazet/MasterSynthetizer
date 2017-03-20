@@ -1,5 +1,7 @@
 package com.kitbass.mastersynthetizer;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -132,8 +134,6 @@ public class HeenokActivity extends AppCompatActivity {
         this.soundIdPageALheure = this.soundPool.load(this, R.raw.une_page_a_lheure, 1);
     }
 
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void onSoundButtonClick(View v) {
         switch (v.getId()) {
             case (R.id.heenok_brla_button):
@@ -186,6 +186,9 @@ public class HeenokActivity extends AppCompatActivity {
                 break;
             case (R.id.heenok_ptipd_button):
                 if (loaded) this.soundPool.play(this.soundIdPtiPD, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_rapclassic_button):
+                if (loaded) this.soundPool.play(this.soundIdRapClassique, 1, 1, 1, 0, 1);
                 break;
             case (R.id.heenok_calotte2_button):
                 if (loaded) this.soundPool.play(this.soundIdCalotte2, 1, 1, 1, 0, 1);
