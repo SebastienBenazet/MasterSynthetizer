@@ -114,10 +114,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_donate) {
-            String donateUrl = "https://www.paypal.me/SebastienBenazet";
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse(donateUrl));
-            startActivity(i);
+            Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
