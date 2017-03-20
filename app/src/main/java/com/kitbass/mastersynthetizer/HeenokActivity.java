@@ -44,6 +44,21 @@ public class HeenokActivity extends AppCompatActivity {
     private int soundIdStreeLife;
     private int soundIdTentends;
     private int soundIdFamille;
+    private int soundIdBwah;
+    private int soundIdChosesQueJapprends;
+    private int soundIdDesertEagle;
+    private int soundIdHadeledil;
+    private int soundIdJaiUnCadeau;
+    private int soundIdMalALaTete;
+    private int soundIdMigraines;
+    private int soundIdOuah;
+    private int soundIdPaname;
+    private int soundIdQecqsPasse;
+    private int soundIdQecqsPutainPasse;
+    private int soundIdTentendsPuteNegre;
+    private int soundIdUnCadeau;
+    private int soundIdUnCadeauAmi;
+    private int soundIdPageALheure;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,7 +115,21 @@ public class HeenokActivity extends AppCompatActivity {
         this.soundIdEquipe = this.soundPool.load(this, R.raw.seulement_mon_equipe, 1);
         this.soundIdStreeLife = this.soundPool.load(this, R.raw.street_life, 1);
         this.soundIdTentends = this.soundPool.load(this, R.raw.t_entends1, 1);
-        this.soundIdFamille = this.soundPool.load(this, R.raw.tes_pas_de_la_famille, 1);
+        this.soundIdBwah = this.soundPool.load(this, R.raw.bwah, 1);
+        this.soundIdChosesQueJapprends = this.soundPool.load(this, R.raw.des_choses_que_japprends, 1);
+        this.soundIdDesertEagle = this.soundPool.load(this, R.raw.desert_eagle, 1);
+        this.soundIdHadeledil = this.soundPool.load(this, R.raw.hadeledil, 1);
+        this.soundIdJaiUnCadeau = this.soundPool.load(this, R.raw.jai_un_cadeau, 1);
+        this.soundIdMalALaTete = this.soundPool.load(this, R.raw.mal_a_la_tete, 1);
+        this.soundIdMigraines = this.soundPool.load(this, R.raw.migraines_de_fou, 1);
+        this.soundIdOuah = this.soundPool.load(this, R.raw.ouah, 1);
+        this.soundIdPaname = this.soundPool.load(this, R.raw.paname_queens_bridge, 1);
+        this.soundIdQecqsPasse = this.soundPool.load(this, R.raw.qecqs_passe, 1);
+        this.soundIdQecqsPutainPasse = this.soundPool.load(this, R.raw.qecqs_putain_de_passe, 1);
+        this.soundIdTentendsPuteNegre = this.soundPool.load(this, R.raw.tentends_pute_negre, 1);
+        this.soundIdUnCadeau = this.soundPool.load(this, R.raw.un_cadeau, 1);
+        this.soundIdUnCadeauAmi = this.soundPool.load(this, R.raw.un_cadeau_pour_mon_ami, 1);
+        this.soundIdPageALheure = this.soundPool.load(this, R.raw.une_page_a_lheure, 1);
     }
 
 
@@ -191,8 +220,50 @@ public class HeenokActivity extends AppCompatActivity {
             case (R.id.heenok_tyson_button):
                 if (loaded) this.soundPool.play(this.soundIdTyson, 1, 1, 1, 0, 1);
                 break;
-            case (R.id.heenok_rapclassic_button):
-                if (loaded) this.soundPool.play(this.soundIdRapClassique, 1, 1, 1, 0, 1);
+            case (R.id.heenok_bwah_button):
+                if (loaded) this.soundPool.play(this.soundIdBwah, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_chosesquejapprends_button):
+                if (loaded) this.soundPool.play(this.soundIdChosesQueJapprends, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_deserteagle_button):
+                if (loaded) this.soundPool.play(this.soundIdDesertEagle, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_hadeledil_button):
+                if (loaded) this.soundPool.play(this.soundIdHadeledil, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_jaiuncadeau_button):
+                if (loaded) this.soundPool.play(this.soundIdJaiUnCadeau, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_malalatete_button):
+                if (loaded) this.soundPool.play(this.soundIdMalALaTete, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_migraines_button):
+                if (loaded) this.soundPool.play(this.soundIdMigraines, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_ouah_button):
+                if (loaded) this.soundPool.play(this.soundIdOuah, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_paname_button):
+                if (loaded) this.soundPool.play(this.soundIdPaname, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_qecqspasse_button):
+                if (loaded) this.soundPool.play(this.soundIdQecqsPasse, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_qecqsputainpasse_button):
+                if (loaded) this.soundPool.play(this.soundIdQecqsPutainPasse, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_tentendsputenegre_button):
+                if (loaded) this.soundPool.play(this.soundIdTentendsPuteNegre, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_uncadeau_button):
+                if (loaded) this.soundPool.play(this.soundIdUnCadeau, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_uncadeaupourmonami_button):
+                if (loaded) this.soundPool.play(this.soundIdUnCadeauAmi, 1, 1, 1, 0, 1);
+                break;
+            case (R.id.heenok_unepagealheure_button):
+                if (loaded) this.soundPool.play(this.soundIdPageALheure, 1, 1, 1, 0, 1);
                 break;
         }
     }
