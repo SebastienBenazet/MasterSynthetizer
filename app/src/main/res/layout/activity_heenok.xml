@@ -1,189 +1,508 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorHeenok"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kitbass.mastersynthetizer.HeenokActivity">
+    android:layout_height="match_parent">
 
-    <!-- 1ère rangée -->
-    <Button
-        android:id="@+id/heenok_brla_button"
-        android:layout_width="@dimen/heenok_button_witdh"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_brla" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/heenok_chevilles_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/heenok_brla_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_chevilles" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-    <Button
-        android:id="@+id/heenok_medaillon_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/heenok_brla_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_medaillon" />
+            <ImageButton
+                android:id="@+id/heenok_brla_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/brla" />
 
-    <!-- 2ème rangée -->
-    <Button
-        android:id="@+id/heenok_montres_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_brla_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_montres" />
+            <ImageButton
+                android:id="@+id/heenok_calotte_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/calotte" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/heenok_negros_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_brla_button"
-        android:layout_toLeftOf="@id/heenok_montres_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_negros" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-    <Button
-        android:id="@+id/heenok_houhou_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_brla_button"
-        android:layout_toRightOf="@id/heenok_brla_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_houhou" />
+            <ImageButton
+                android:id="@+id/heenok_calotte2_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/calotte2" />
 
-    <!-- 3ème rangée -->
-    <Button
-        android:id="@+id/heenok_revenu_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montres_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_revenu" />
+            <ImageButton
+                android:id="@+id/heenok_revenu_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/font_aucun_revenu" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/heenok_han_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montres_button"
-        android:layout_toLeftOf="@id/heenok_revenu_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_han" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-    <Button
-        android:id="@+id/heenok_croivent_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montres_button"
-        android:layout_toRightOf="@id/heenok_revenu_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_croivent" />
+            <ImageButton
+                android:id="@+id/heenok_han_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/han" />
 
-    <!-- 4ème rangée -->
-    <Button
-        android:id="@+id/heenok_pesent_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revenu_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_pesent" />
+            <ImageButton
+                android:id="@+id/heenok_hydroponique_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/hydroponique" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/heenok_dimension_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revenu_button"
-        android:layout_toLeftOf="@id/heenok_pesent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_dimension" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-    <Button
-        android:id="@+id/heenok_100dollars_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revenu_button"
-        android:layout_toRightOf="@id/heenok_pesent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_100dollars" />
+            <ImageButton
+                android:id="@+id/heenok_croivent_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/ils_croivent_cest_un_jeu" />
 
-    <!-- 5ème rangée -->
-    <Button
-        android:id="@+id/heenok_montrealparis_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_pesent_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_montrealparis" />
+            <ImageButton
+                android:id="@+id/heenok_pesent_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/ils_pesent_rien" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/heenok_hydroponique_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_pesent_button"
-        android:layout_toLeftOf="@id/heenok_montrealparis_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_hydroponique" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-    <Button
-        android:id="@+id/heenok_pomme_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_pesent_button"
-        android:layout_toRightOf="@id/heenok_montrealparis_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_pomme" />
+            <ImageButton
+                android:id="@+id/heenok_donnedelamour_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/jte_donne_de_lamour" />
 
-    <!-- 6ème rangée -->
-    <Button
-        android:id="@+id/heenok_revent_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montrealparis_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_revent" />
+            <ImageButton
+                android:id="@+id/heenok_cestpete_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/jtrouve_que_cest_pete" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/heenok_convention_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montrealparis_button"
-        android:layout_toLeftOf="@id/heenok_revent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_convention" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-    <Button
-        android:id="@+id/heenok_equipe_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_montrealparis_button"
-        android:layout_toRightOf="@id/heenok_revent_button"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_equipe" />
+            <ImageButton
+                android:id="@+id/heenok_autredimension_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/jviens_dun_autre_dimension" />
 
-    <!-- 7ème rangée -->
-    <Button
-        android:id="@+id/heenok_famille_button"
-        android:layout_width="@dimen/heenok_button_witdh"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/heenok_revent_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="onSoundButtonClick"
-        android:text="@string/heenok_famille" />
+            <ImageButton
+                android:id="@+id/heenok_frousse_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/la_frousse" />
+        </LinearLayout>
 
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-</RelativeLayout>
+            <ImageButton
+                android:id="@+id/heenok_sorbonne_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/la_sorbonne" />
+
+            <ImageButton
+                android:id="@+id/heenok_balafre_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/le_balafre" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_dictionnaire_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/le_dictionnaire" />
+
+            <ImageButton
+                android:id="@+id/heenok_chosessepassent_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/les_choses_se_passent_a_fond" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_medaillon_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/medaillon" />
+
+            <ImageButton
+                android:id="@+id/heenok_tyson_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/michael_tyson" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_100dollars_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/moins_que_100_dollars" />
+
+            <ImageButton
+                android:id="@+id/heenok_montrealparis_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/montreal_paris" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_pomme_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/pomme" />
+
+            <ImageButton
+                android:id="@+id/heenok_ptipd_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/pti_pd" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_rapclassic_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/rap_classique" />
+
+            <ImageButton
+                android:id="@+id/heenok_revent_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/revent_a_cela" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_convention_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/seulement_ma_convention" />
+
+            <ImageButton
+                android:id="@+id/heenok_equipe_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/seulement_mon_equipe" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_streetlife_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/street_life" />
+
+            <ImageButton
+                android:id="@+id/heenok_tentends1_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/t_entends1" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/heenok_famille_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/tes_pas_dla_famille" />
+
+            <ImageButton
+                android:id="@+id/heenok_soon_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onSoundButtonClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/soon" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
