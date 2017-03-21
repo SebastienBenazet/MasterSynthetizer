@@ -66,6 +66,7 @@
     <!-- Textes d'accessibilité -->
     <string name="accessibility_home_image">Image du Roi Heenok fumant</string>
     <string name="accessibility_ic_launcher">Tête du Roi Heenok</string>
+    <string name="jukebox">Jukebox</string>
 
 
 </resources>
