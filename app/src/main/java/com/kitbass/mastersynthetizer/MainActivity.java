@@ -30,8 +30,15 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         //Initialize and load the ad
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8265447561352564/2863428730");
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8265447561352564~1386695531");
         mAdView = (AdView) findViewById(R.id.adView);
+
+        //Display test ads during development
+//        AdRequest request = new AdRequest.Builder()
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)        // All emulators
+//                .addTestDevice("99D55145A996BDE4391794A609C1EBC4")  // Nexus 5 Séb
+//                .build();
+
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
@@ -104,7 +111,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, HeenokActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
-            Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, JukeboxActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
             Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_manage) {
