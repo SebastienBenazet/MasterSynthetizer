@@ -62,16 +62,16 @@ public class HeenokActivity extends AppCompatActivity {
 
     /* Helper methods */
     private void loadHeenokSounds() {
-        Field[] fields=R.raw.class.getFields();
+        Field[] fields = R.raw.class.getFields();
         int numberOfHeenokSounds = 0;
-        for(int i=0; i < fields.length; i++){
-            if(fields[i].getName().startsWith(PRECEDING_SOUNDS_FILENAME_STRING))
+        for (int i = 0; i < fields.length; i++) {
+            if (fields[i].getName().startsWith(PRECEDING_SOUNDS_FILENAME_STRING))
                 numberOfHeenokSounds++;
         }
 
         int tempSoundPool;
         String tempSoundFileName;
-        for(int i = 1 ; i < numberOfHeenokSounds + 1 ; i++) {
+        for (int i = 1; i < numberOfHeenokSounds + 1; i++) {
             tempSoundFileName = PRECEDING_SOUNDS_FILENAME_STRING + i;
             tempSoundPool = this.soundPool.load(this, this.getResources().getIdentifier(tempSoundFileName, "raw", getPackageName()), 1);
             soundResIds.put(tempSoundFileName, tempSoundPool);
