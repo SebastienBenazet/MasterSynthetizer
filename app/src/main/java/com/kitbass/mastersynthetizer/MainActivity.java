@@ -98,8 +98,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_heenok) {
             //Play Heenok song
-            final MediaPlayer dollars = MediaPlayer.create(this, R.raw.moins_que_100_dollars);
-            dollars.start();
+            /*final MediaPlayer dollars = MediaPlayer.create(this, R.raw.moins_que_100_dollars);
+            dollars.start();*/
             //Start HeenokActivity
             Intent intent = new Intent(MainActivity.this, HeenokActivity.class);
             startActivity(intent);

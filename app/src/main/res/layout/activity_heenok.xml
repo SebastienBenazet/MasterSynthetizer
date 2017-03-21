@@ -16,7 +16,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_brla_button"
+                android:id="@+id/heenok_1_button"
+                android:tag="heenok_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -30,7 +31,8 @@
                 android:src="@drawable/brla" />
 
             <ImageButton
-                android:id="@+id/heenok_calotte_button"
+                android:id="@+id/heenok_2_button"
+                android:tag="heenok_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -51,7 +53,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_calotte2_button"
+                android:id="@+id/heenok_3_button"
+                android:tag="heenok_3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -64,7 +67,8 @@
                 android:src="@drawable/calotte2" />
 
             <ImageButton
-                android:id="@+id/heenok_revenu_button"
+                android:id="@+id/heenok_4_button"
+                android:tag="heenok_4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -84,7 +88,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_han_button"
+                android:id="@+id/heenok_5_button"
+                android:tag="heenok_5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -97,7 +102,8 @@
                 android:src="@drawable/han" />
 
             <ImageButton
-                android:id="@+id/heenok_hydroponique_button"
+                android:id="@+id/heenok_6_button"
+                android:tag="heenok_6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -117,7 +123,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_croivent_button"
+                android:id="@+id/heenok_7_button"
+                android:tag="heenok_7"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -130,7 +137,8 @@
                 android:src="@drawable/ils_croivent_cest_un_jeu" />
 
             <ImageButton
-                android:id="@+id/heenok_pesent_button"
+                android:id="@+id/heenok_8_button"
+                android:tag="heenok_8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -150,7 +158,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_donnedelamour_button"
+                android:id="@+id/heenok_9_button"
+                android:tag="heenok_9"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -163,7 +172,8 @@
                 android:src="@drawable/jte_donne_de_lamour" />
 
             <ImageButton
-                android:id="@+id/heenok_cestpete_button"
+                android:id="@+id/heenok_10_button"
+                android:tag="heenok_10"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -183,7 +193,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_autredimension_button"
+                android:id="@+id/heenok_11_button"
+                android:tag="heenok_11"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -196,7 +207,8 @@
                 android:src="@drawable/jviens_dun_autre_dimension" />
 
             <ImageButton
-                android:id="@+id/heenok_frousse_button"
+                android:id="@+id/heenok_12_button"
+                android:tag="heenok_12"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -216,7 +228,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_sorbonne_button"
+                android:id="@+id/heenok_13_button"
+                android:tag="heenok_13"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -229,7 +242,8 @@
                 android:src="@drawable/la_sorbonne" />
 
             <ImageButton
-                android:id="@+id/heenok_balafre_button"
+                android:id="@+id/heenok_14_button"
+                android:tag="heenok_14"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -249,7 +263,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_dictionnaire_button"
+                android:id="@+id/heenok_15_button"
+                android:tag="heenok_15"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -262,7 +277,8 @@
                 android:src="@drawable/le_dictionnaire" />
 
             <ImageButton
-                android:id="@+id/heenok_chosessepassent_button"
+                android:id="@+id/heenok_16_button"
+                android:tag="heenok_16"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -282,7 +298,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_medaillon_button"
+                android:id="@+id/heenok_17_button"
+                android:tag="heenok_17"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -295,7 +312,8 @@
                 android:src="@drawable/medaillon" />
 
             <ImageButton
-                android:id="@+id/heenok_tyson_button"
+                android:id="@+id/heenok_18_button"
+                android:tag="heenok_18"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -315,7 +333,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_100dollars_button"
+                android:id="@+id/heenok_19_button"
+                android:tag="heenok_19"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -328,7 +347,8 @@
                 android:src="@drawable/moins_que_100_dollars" />
 
             <ImageButton
-                android:id="@+id/heenok_montrealparis_button"
+                android:id="@+id/heenok_20_button"
+                android:tag="heenok_20"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -348,7 +368,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_pomme_button"
+                android:id="@+id/heenok_21_button"
+                android:tag="heenok_21"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -361,7 +382,8 @@
                 android:src="@drawable/pomme" />
 
             <ImageButton
-                android:id="@+id/heenok_ptipd_button"
+                android:id="@+id/heenok_22_button"
+                android:tag="heenok_22"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -381,7 +403,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_rapclassic_button"
+                android:id="@+id/heenok_23_button"
+                android:tag="heenok_23"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -394,7 +417,8 @@
                 android:src="@drawable/rap_classique" />
 
             <ImageButton
-                android:id="@+id/heenok_revent_button"
+                android:id="@+id/heenok_24_button"
+                android:tag="heenok_24"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -414,7 +438,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_convention_button"
+                android:id="@+id/heenok_25_button"
+                android:tag="heenok_25"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -427,7 +452,8 @@
                 android:src="@drawable/seulement_ma_convention" />
 
             <ImageButton
-                android:id="@+id/heenok_equipe_button"
+                android:id="@+id/heenok_26_button"
+                android:tag="heenok_26"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -447,7 +473,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_streetlife_button"
+                android:id="@+id/heenok_27_button"
+                android:tag="heenok_27"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -460,7 +487,8 @@
                 android:src="@drawable/street_life" />
 
             <ImageButton
-                android:id="@+id/heenok_tentends1_button"
+                android:id="@+id/heenok_28_button"
+                android:tag="heenok_28"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -480,7 +508,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_famille_button"
+                android:id="@+id/heenok_29_button"
+                android:tag="heenok_29"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -493,7 +522,8 @@
                 android:src="@drawable/tes_pas_dla_famille" />
 
             <ImageButton
-                android:id="@+id/heenok_bwah_button"
+                android:id="@+id/heenok_30_button"
+                android:tag="heenok_30"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -513,7 +543,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_chosesquejapprends_button"
+                android:id="@+id/heenok_31_button"
+                android:tag="heenok_31"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -526,7 +557,8 @@
                 android:src="@drawable/des_choses_que_japprends" />
 
             <ImageButton
-                android:id="@+id/heenok_deserteagle_button"
+                android:id="@+id/heenok_32_button"
+                android:tag="heenok_32"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -546,7 +578,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_uncadeau_button"
+                android:id="@+id/heenok_33_button"
+                android:tag="heenok_33"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -559,7 +592,8 @@
                 android:src="@drawable/un_cadeau" />
 
             <ImageButton
-                android:id="@+id/heenok_jaiuncadeau_button"
+                android:id="@+id/heenok_34_button"
+                android:tag="heenok_34"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -579,7 +613,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_uncadeaupourmonami_button"
+                android:id="@+id/heenok_35_button"
+                android:tag="heenok_35"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -592,7 +627,8 @@
                 android:src="@drawable/un_cadeau_pour_mon_ami" />
 
             <ImageButton
-                android:id="@+id/heenok_migraines_button"
+                android:id="@+id/heenok_36_button"
+                android:tag="heenok_36"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -612,7 +648,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_ouah_button"
+                android:id="@+id/heenok_37_button"
+                android:tag="heenok_37"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -625,7 +662,8 @@
                 android:src="@drawable/ouah" />
 
             <ImageButton
-                android:id="@+id/heenok_paname_button"
+                android:id="@+id/heenok_38_button"
+                android:tag="heenok_38"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -645,7 +683,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_qecqspasse_button"
+                android:id="@+id/heenok_39_button"
+                android:tag="heenok_39"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -658,7 +697,8 @@
                 android:src="@drawable/qecqs_passe" />
 
             <ImageButton
-                android:id="@+id/heenok_qecqsputainpasse_button"
+                android:id="@+id/heenok_40_button"
+                android:tag="heenok_40"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -678,7 +718,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_tentendsputenegre_button"
+                android:id="@+id/heenok_41_button"
+                android:tag="heenok_41"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -691,7 +732,8 @@
                 android:src="@drawable/tentends_pute_negre" />
 
             <ImageButton
-                android:id="@+id/heenok_hadeledil_button"
+                android:id="@+id/heenok_42_button"
+                android:tag="heenok_42"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
@@ -711,7 +753,8 @@
             android:weightSum="1">
 
             <ImageButton
-                android:id="@+id/heenok_malalatete_button"
+                android:id="@+id/heenok_43_button"
+                android:tag="heenok_43"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
@@ -724,7 +767,8 @@
                 android:src="@drawable/mal_a_la_tete" />
 
             <ImageButton
-                android:id="@+id/heenok_unepagealheure_button"
+                android:id="@+id/heenok_44_button"
+                android:tag="heenok_44"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".5"
