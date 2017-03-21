@@ -10,11 +10,15 @@
 <br>
 <br>
 
-# Instructions
-- [Télécharger](https://github.com/SebastienBenazet/MasterSynthetizer/releases) l'APK
-- Autoriser les installations via des Sources inconnues dans les paramètres de sécurité
-- Installer l'APK
-- Enjoy !
+# Installation
+- Depuis le **Play Store** 
+    * [Master Synthetizer](https://play.google.com/store/apps/details?id=com.kitbass.mastersynthetizer)
+
+- Depuis ce **Github**
+    * [Télécharger](https://github.com/SebastienBenazet/MasterSynthetizer/releases) l'APK
+    * Autoriser les installations via des Sources inconnues dans les paramètres de sécurité
+    * Installer l'APK
+    * Enjoy !
 
 <img src="https://github.com/SebastienBenazet/MasterSynthetizer/blob/master/HeenokDemo.png"
  alt="MasterSynthetizer Demo" title="HeenokDemo" align="left" width="300" /> 
@@ -23,5 +27,6 @@
  <br>
  <br> 
  - Interface simple et épurée
- - Toute vos punchlines préférées du Roi Heenok dans une seule appli 
+ - Toutes vos punchlines préférées du Roi Heenok dans une seule appli 
  - Possibilité de jouer plusieurs sons en même temps
+ - Des mises à jour régulières

@@ -113,7 +113,7 @@ public class HeenokActivity extends AppCompatActivity {
         this.soundIdConvention = this.soundPool.load(this, R.raw.seulement_ma_convention, 1);
         this.soundIdEquipe = this.soundPool.load(this, R.raw.seulement_mon_equipe, 1);
         this.soundIdStreeLife = this.soundPool.load(this, R.raw.street_life, 1);
-        this.soundIdTentends = this.soundPool.load(this, R.raw.t_entends1, 1);;
+        this.soundIdTentends = this.soundPool.load(this, R.raw.t_entends1, 1);
         this.soundIdFamille = this.soundPool.load(this, R.raw.tes_pas_de_la_famille, 1);
         this.soundIdBwah = this.soundPool.load(this, R.raw.bwah, 1);
         this.soundIdChosesQueJapprends = this.soundPool.load(this, R.raw.des_choses_que_japprends, 1);
