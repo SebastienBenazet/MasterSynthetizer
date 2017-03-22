@@ -9,11 +9,11 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_manage"
-            android:title="RecyclerView" />
+            android:title="Picasso" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Picasso" />
+            android:title="@string/coming_soon" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
