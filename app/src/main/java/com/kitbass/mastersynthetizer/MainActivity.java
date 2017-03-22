@@ -114,7 +114,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, JukeboxActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
-            Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, PicassoActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_manage) {
             Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_about) {

@@ -48,6 +48,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kitbass.mastersynthetizer.MainActivity" />
         </activity>
+        <activity
+            android:name=".PicassoActivity"
+            android:label="@string/nav_heenok_menu"
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kitbass.mastersynthetizer.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
