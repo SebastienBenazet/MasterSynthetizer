@@ -79,7 +79,7 @@ public class JukeboxActivity extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
                 // Jouer le son ICI
-                playSound(view, 1);
+                playSound(position);
             }
 
             @Override
@@ -136,8 +136,8 @@ public class JukeboxActivity extends AppCompatActivity {
     }
 
     /* TODO : Play sound depending on item position */
-    private void playSound(View view, int position) {
-        String soundFileName = view.getTag().toString();
+    private void playSound(int position) {
+        String soundFileName = PRECEDING_SOUNDS_FILENAME_STRING + (position + 1);
         this.soundPool.play(soundResIds.get(soundFileName), 1, 1, 1, 0, 1);
     }
 }
