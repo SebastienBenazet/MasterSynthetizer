@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO : Rendre la hautre de l'image dynamique -->
-<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_button"
     android:layout_width="match_parent"
     android:layout_height="121dp"
     android:background="@null"
     android:foreground="?attr/selectableItemBackgroundBorderless"
-    android:onClick="onSoundButtonClick"/>
+    android:scaleType="fitXY" />
