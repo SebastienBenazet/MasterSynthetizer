@@ -1,15 +1,29 @@
 package com.kitbass.mastersynthetizer;
 
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 
 
 public class Helpers {
-    public static Integer[] convertIntegerArrayListToArray(List<Integer> integerList) {
-        Integer[] ret = new Integer[integerList.size()];
-        for (int i=0; i < ret.length; i++)
-        {
-            ret[i] = integerList.get(i).intValue();
+    public static JSONObject loadJsonFromInputStream(InputStream inputStream) {
+        try {
+            StringBuilder total = new StringBuilder();
+            BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
+            String line;
+            while ((line = r.readLine()) != null) {
+                total.append(line).append('\n');
+            }
+
+            return new JSONObject(total.toString());
         }
-        return ret;
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }
