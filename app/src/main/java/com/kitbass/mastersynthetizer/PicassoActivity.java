@@ -25,6 +25,7 @@ import java.io.InputStream;
 public class PicassoActivity extends AppCompatActivity {
 
     public static Integer[] imgResourcesHeenok;
+    public static Integer[] soundResourcesHeenok;
     private AdView mAdView;
     private boolean loaded;
     private SoundPool soundPool;
@@ -55,8 +56,17 @@ public class PicassoActivity extends AppCompatActivity {
             this.soundPool = new SoundPool(MAX_STREAMS, AudioManager.STREAM_MUSIC, 0);
         }
 
+        // When Sound Pool load complete.
+        this.soundPool.setOnLoadCompleteListener(new SoundPool.OnLoadCompleteListener() {
+            @Override
+            public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
+                loaded = true;
+            }
+        });
+
         // Initialize soundboard images
         initializeSoundboardImages();
+        initializeSoundboardSounds();
 
         //imgResourcesHeenok.add(this.getResources().getIdentifier("soon","drawable",getPackageName()));
 
@@ -66,17 +76,11 @@ public class PicassoActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), "" + position, Toast.LENGTH_SHORT).show();
+                if (loaded)
+                    soundPool.play(soundResourcesHeenok[position], 1, 1, 1, 0, 1);
             }
-
         });
     }
-//
-//    public void playSound(View v) {
-//        if (loaded) {
-//            String soundFileName = v.getTag().toString();
-//            this.soundPool.play(soundResIds.get(soundFileName), 1, 1, 1, 0, 1);
-//        }
-//    }
 
     /* Helper methods */
     private void initializeSoundboardImages() {
@@ -100,6 +104,34 @@ public class PicassoActivity extends AppCompatActivity {
                                 getPackageName()
                         )
                 );
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void initializeSoundboardSounds() {
+        try {
+            // Load heenok json
+            InputStream heenokSoundboardInputStream = getResources().openRawResource(R.raw.soundboard_heenok);
+            JSONObject soundboardJson = Helpers.loadJsonFromInputStream(heenokSoundboardInputStream);
+
+            JSONArray imagesSounds = soundboardJson.getJSONObject("Soundboard").getJSONArray("ImagesSounds");
+            int imagesSoundsCount = imagesSounds.length();
+
+            // Json parsing
+            JSONObject tempImageSound;
+            soundResourcesHeenok = new Integer[imagesSoundsCount];
+            for (int i = 0; i < imagesSoundsCount; i++) {
+                tempImageSound = imagesSounds.getJSONObject(i);
+                int soundResource = (this
+                        .getResources()
+                        .getIdentifier(tempImageSound.getString("SoundFileName"),
+                                "raw",
+                                getPackageName()
+                        )
+                );
+                soundResourcesHeenok[i] = this.soundPool.load(this, soundResource, 1);
             }
         } catch (JSONException e) {
             e.printStackTrace();
