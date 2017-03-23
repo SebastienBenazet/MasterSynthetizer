@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -64,9 +63,8 @@ public class PicassoActivity extends AppCompatActivity {
             }
         });
 
-        // Initialize soundboard images
-        initializeSoundboardImages();
-        initializeSoundboardSounds();
+        // Initialize soundboard images and sounds
+        initializeSoundboard();
 
         //imgResourcesHeenok.add(this.getResources().getIdentifier("soon","drawable",getPackageName()));
 
@@ -75,7 +73,6 @@ public class PicassoActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "" + position, Toast.LENGTH_SHORT).show();
                 if (loaded)
                     soundPool.play(soundResourcesHeenok[position], 1, 1, 1, 0, 1);
             }
@@ -83,7 +80,7 @@ public class PicassoActivity extends AppCompatActivity {
     }
 
     /* Helper methods */
-    private void initializeSoundboardImages() {
+    private void initializeSoundboard() {
         try {
             // Load heenok json
             InputStream heenokSoundboardInputStream = getResources().openRawResource(R.raw.soundboard_heenok);
@@ -94,7 +91,9 @@ public class PicassoActivity extends AppCompatActivity {
 
             // Json parsing
             JSONObject tempImageSound;
+            int tempSoundResource;
             imgResourcesHeenok = new Integer[imagesSoundsCount];
+            soundResourcesHeenok = new Integer[imagesSoundsCount];
             for (int i = 0; i < imagesSoundsCount; i++) {
                 tempImageSound = imagesSounds.getJSONObject(i);
                 imgResourcesHeenok[i] = (this
@@ -104,34 +103,15 @@ public class PicassoActivity extends AppCompatActivity {
                                 getPackageName()
                         )
                 );
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
 
-    private void initializeSoundboardSounds() {
-        try {
-            // Load heenok json
-            InputStream heenokSoundboardInputStream = getResources().openRawResource(R.raw.soundboard_heenok);
-            JSONObject soundboardJson = Helpers.loadJsonFromInputStream(heenokSoundboardInputStream);
-
-            JSONArray imagesSounds = soundboardJson.getJSONObject("Soundboard").getJSONArray("ImagesSounds");
-            int imagesSoundsCount = imagesSounds.length();
-
-            // Json parsing
-            JSONObject tempImageSound;
-            soundResourcesHeenok = new Integer[imagesSoundsCount];
-            for (int i = 0; i < imagesSoundsCount; i++) {
-                tempImageSound = imagesSounds.getJSONObject(i);
-                int soundResource = (this
+                tempSoundResource = (this
                         .getResources()
                         .getIdentifier(tempImageSound.getString("SoundFileName"),
                                 "raw",
                                 getPackageName()
                         )
                 );
-                soundResourcesHeenok[i] = this.soundPool.load(this, soundResource, 1);
+                soundResourcesHeenok[i] = this.soundPool.load(this, tempSoundResource, 1);
             }
         } catch (JSONException e) {
             e.printStackTrace();
