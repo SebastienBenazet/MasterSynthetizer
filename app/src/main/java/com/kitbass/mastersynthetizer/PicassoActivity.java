@@ -34,7 +34,7 @@ public class PicassoActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
         // Initialize soundboard images
-        initializeSoundBoardImages();
+        initializeSoundboardImages();
 
         //imgResourcesHeenok.add(this.getResources().getIdentifier("soon","drawable",getPackageName()));
 
@@ -46,8 +46,9 @@ public class PicassoActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Coming soon !", Toast.LENGTH_SHORT).show();
     }
 
+
     /* Helper methods */
-    private void initializeSoundBoardImages() {
+    private void initializeSoundboardImages() {
         try {
             // Load heenok json
             InputStream heenokSoundboardInputStream = getResources().openRawResource(R.raw.soundboard_heenok);
