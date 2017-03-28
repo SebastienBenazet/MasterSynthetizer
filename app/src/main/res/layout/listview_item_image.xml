@@ -2,7 +2,9 @@
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/iv_button"
     android:layout_width="match_parent"
-    android:layout_height="121dp"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
     android:background="@null"
+    android:clickable="true"
     android:foreground="?attr/selectableItemBackgroundBorderless"
     android:scaleType="fitXY" />
