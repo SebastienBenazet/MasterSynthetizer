@@ -1,5 +1,6 @@
 package com.kitbass.mastersynthetizer;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,23 +10,33 @@ import android.widget.ImageView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private Drawable[] mDataset;
+    private JukeboxActivity mContext;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder
+            implements View.OnClickListener {
         // each data item is just a string in this case
         public ImageView mImageView;
 
         public ViewHolder(ImageView v) {
             super(v);
+            v.setOnClickListener(this);
             mImageView = v;
+        }
+
+        public void onClick(View view) {
+            if (mContext instanceof JukeboxActivity)
+                mContext.playSound(getAdapterPosition());
+//            Log.d(TAG, "Item n° : " + getAdapterPosition());
         }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(Drawable[] myDataset) {
+    public MyAdapter(Drawable[] myDataset, JukeboxActivity context) {
         mDataset = myDataset;
+        this.mContext = context;
     }
 
     // Create new views (invoked by the layout manager)

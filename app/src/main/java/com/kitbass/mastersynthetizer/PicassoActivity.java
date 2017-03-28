@@ -22,7 +22,6 @@ import java.io.InputStream;
 
 
 public class PicassoActivity extends AppCompatActivity {
-
     public static Integer[] imgResourcesHeenok;
     public static Integer[] soundResourcesHeenok;
     private AdView mAdView;
